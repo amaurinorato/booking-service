@@ -1,0 +1,12 @@
+services:
+  booking-service:
+    image: booking-service:latest
+    environment:
+      - API_ID=${API_ID}
+    healthcheck:
+      test: [ "CMD-SHELL", "nc -z localhost 8080" ]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+    ports:
+      - "8080:8080"
