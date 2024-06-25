@@ -68,3 +68,12 @@ This is the request to block a property:
   "propertyId": 3
 }
 ```
+
+## Running the project
+
+Running the projetct requires the docker and docker-compose installed on the machine.
+
+1. Clone the repository and access its directory
+2. Run the command `mvn clean install`
+3. Run the command `docker-compose up`
+4. The application will be available at http://localhost:8080
